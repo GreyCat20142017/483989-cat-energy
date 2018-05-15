@@ -9,6 +9,7 @@
   vertical-align: baseline;
   text-transform: uppercase;
   position: relative;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -64,21 +65,8 @@
   }
 }
 
-// Не работает из-за непонятного глюка. Вместо одной строки пришлось лепить конструкцию ниже.
-// .option__control:active + .option__label {
-//   opacity: 0.3;
-// }
-
 .option__control:active + .option__label {
-  color: rgba(17, 17, 17, 0.3);
-
-  &::before {
-    opacity: 0.3;
-  }
-
-  &::after {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 .option__control:disabled + .option__label {
