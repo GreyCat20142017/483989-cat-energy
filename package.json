@@ -3,6 +3,7 @@
   "version": "14.0.0",
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "homepage": "https://greycat20142017.github.io/483989-cat-energy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
@@ -31,7 +32,9 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "serve": "gulp serve",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
